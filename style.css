@@ -1,0 +1,91 @@
+@font-face{
+  font-family: norse;
+  src: url(../fonts/Norse-Bold.otf)
+}
+
+:root{
+  --logo-font: 30px;
+  --lighter-black: rgba(0, 0, 0, 0.94);
+}
+
+body{
+  margin: 0px;
+}
+
+.banner > h1{
+  font-family: norse;
+}
+
+.form{
+  flex: 1;
+  background-color: black;
+}
+
+.sign-up{
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  flex: 5;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caption > p{
+  margin: 50px;
+  flex: 1;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.background{
+  display: flex;
+  background-image: url("background.png");
+  background-size: cover;
+  flex: 3;
+}
+
+.background > h1{
+  color: white;
+}
+
+.logo > a > img{
+  height: 60px;
+  width: 60px;
+}
+
+.banner{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15%;
+  width: 100%;
+  margin-top: 25%;
+  gap: 10px;
+  font-size: var(--logo-font);
+}
+
+.caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--lighter-black)
+}
+
+.create-btn{
+  flex: 1;
+  background-color: var(--lighter-black);
+}
+
+.create-btn > p, button{  
+  margin-left: 50px;
+  margin-top: 20px;
+}
