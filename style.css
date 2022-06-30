@@ -8,6 +8,12 @@
   --lighter-black: rgba(0, 0, 0, 0.94);
 }
 
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
 body{
   margin: 0px;
 }
@@ -31,9 +37,15 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#form > p{
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
 .caption > p{
   margin: 50px;
   flex: 1;
+  
 }
 
 .container{
@@ -77,11 +89,13 @@ body{
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--lighter-black)
+  background-color: var(--lighter-black);
+  font-weight: bolder;
+  
 }
 
 .create-btn{
-  flex: 1;
+  flex: 0.5;
   background-color: var(--lighter-black);
 }
 
@@ -89,3 +103,36 @@ body{
   margin-left: 50px;
   margin-top: 20px;
 }
+
+a:hover{
+  color: yellow;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 50px;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: row;
+  border: none;
+  gap: 50px;
+  padding: 0px;
+  padding-bottom: 45px;
+}
+
+.form-cell{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+form input{
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 0px;
+}
+

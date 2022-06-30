@@ -22,41 +22,50 @@
 
     <div class="sign-up">
       <div class="caption">
-        <p>This is not a real online service! You know you need something like this in your life tohelp you realize your deepest dreams. Sign up <i>now</i> to get started. </br></br>You <i>know</i> you want to</p>       
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started. </br></br>You <i>know</i> you want to</p>       
       </div>
 
       <div class="form">
-        <form action="" method="post">
-          <legend>Let's do this!</legend>
+        <form action="" method="post" id="form">
+          <p>Let's do this!</p></br>
           <fieldset>
-            <label for="first_name">First Name: </label> 
-            <input type="text" id="first_name" name="first_name">
-  
-            <label for="last_name">Last Name: </label>
-            <input type="text" id="last_name" name="last_name">
+            <div class="form-cell">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name">
+            </div>
+            <div class="form-cell">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
           </fieldset>
-  
+
           <fieldset>
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email">
-  
-            <label for="contact">Contact Number: </label>
-            <input type="text" id="contact" name="contact">
+            <div class="form-cell">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-cell">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name=" phone">
+            </div>
           </fieldset>
-  
+
           <fieldset>
-            <label for="password">Password: </label>
-            <input type="text" id="password" name="password">
-  
-            <label for="confirm">Confirm Password: </label>
-            <input type="text" id="confirm" name="confirm">
+            <div class="form-cell">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-cell">
+                <label for="confirm_pw">Confirm Password</label>
+                <input type="password" id="confirm_pw" name="confirm_pw">
+            </div>
           </fieldset>
   
         </form>
       </div>
       <div class="create-btn">
         <button>Create Account</button>
-        <p>Already have an account? Log in</p>
+        <p>Already have an account? Log <a href="https://www.theodinproject.com/">in</a> </p>
       </div>
       
     </div>
